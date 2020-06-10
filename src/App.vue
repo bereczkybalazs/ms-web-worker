@@ -7,10 +7,9 @@
 <script>
 import WebWorkerSearch from "./components/WebWorkerSearch";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     WebWorkerSearch
   }
-}
+};
 </script>
-
