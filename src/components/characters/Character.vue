@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <img :src="url" class="max-w-sm" :alt="name" />
+    <img :src="url" :alt="name" />
     <figcaption class="text-center text-lg mt-4">
       {{ name }}
     </figcaption>
