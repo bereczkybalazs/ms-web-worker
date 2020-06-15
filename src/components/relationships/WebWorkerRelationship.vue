@@ -36,12 +36,14 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      const isSmall = this.$refs.love.classList.contains("max-w-sm");
-      const isVerySmall = this.$refs.love.classList.contains("max-w-xs");
-      if (isSmall) {
-        this.$refs.love.classList.replace("max-w-sm", "max-w-xs");
-      } else if (isVerySmall) {
-        this.$refs.love.classList.replace("max-w-xs", "max-w-sm");
+      if (this.$refs.love) {
+        const isSmall = this.$refs.love.classList.contains("max-w-sm");
+        const isVerySmall = this.$refs.love.classList.contains("max-w-xs");
+        if (isSmall) {
+          this.$refs.love.classList.replace("max-w-sm", "max-w-xs");
+        } else if (isVerySmall) {
+          this.$refs.love.classList.replace("max-w-xs", "max-w-sm");
+        }
       }
     }, 100);
   },

@@ -14,9 +14,9 @@
 <script>
 import MrUser from "../components/characters/MrUser";
 import MsWebWorker from "../components/characters/MsWebWorker";
-import WebWorkerRelationship from "../components/WebWorkerRelationship";
+import WebWorkerRelationship from "../components/relationships/WebWorkerRelationship";
 export default {
-  name: "WebWorkerSearch",
+  name: "WebWorkerPage",
   components: { WebWorkerRelationship, MsWebWorker, MrUser }
 };
 </script>

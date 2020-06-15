@@ -4,7 +4,7 @@
       <img
         src="https://firebasestorage.googleapis.com/v0/b/express-ssr-6e0e3.appspot.com/o/heart.png?alt=media&token=cf52ec09-cd7c-4d0b-9724-4e3dc6de7823"
         class="max-w-sm mx-8 mb-8"
-        alt="Mr. User and Ms. Web Worker's relationship"
+        alt="Mr. User and Mrs. Frontend Filtering's relationship"
         ref="love"
       />
     </div>
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "Relationship",
+  name: "FrontendFilteringRelationship",
   mounted() {
     setInterval(() => {
       const isSmall = this.$refs.love.classList.contains("max-w-sm");

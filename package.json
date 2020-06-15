@@ -11,6 +11,7 @@
     "core-js": "^3.6.5",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
     "vue-worker": "^1.2.1"
   },
   "devDependencies": {
@@ -38,7 +39,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/no-parsing-error": [2, { "x-invalid-end-tag": false }]
+    }
   },
   "browserslist": [
     "> 1%",

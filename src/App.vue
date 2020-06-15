@@ -1,15 +1,24 @@
 <template>
   <div id="app">
-    <WebWorkerSearch />
+    <ul class="flex container mx-auto justify-center my-4">
+      <Link to="/">
+        Home
+      </Link>
+      <Link to="/mrs-frontend-filtering">
+        Mrs. Frontend Filtering
+      </Link>
+      <Link to="/ms-web-worker">
+        Ms. Web Worker
+      </Link>
+    </ul>
+    <router-view />
   </div>
 </template>
 
 <script>
-import WebWorkerSearch from "./pages/WebWorkerPage";
+import Link from "./components/Link";
 export default {
   name: "App",
-  components: {
-    WebWorkerSearch
-  }
+  components: { Link }
 };
 </script>
