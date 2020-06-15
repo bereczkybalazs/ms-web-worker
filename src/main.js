@@ -1,7 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
+import VueWorker from "vue-worker";
 import "./assets/styles/index.css";
 
+Vue.use(VueWorker);
 Vue.config.productionTip = false;
 
 new Vue({

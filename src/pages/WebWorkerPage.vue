@@ -5,18 +5,18 @@
     </h1>
     <div class="flex justify-center container mx-auto">
       <MrUser class="w-1/4" />
-      <Relationship class="w-2/4" />
+      <WebWorkerRelationship class="w-2/4" />
       <MsWebWorker class="w-1/4" />
     </div>
   </div>
 </template>
 
 <script>
-import MrUser from "./characters/MrUser";
-import MsWebWorker from "./characters/MsWebWorker";
-import Relationship from "./Relationship";
+import MrUser from "../components/characters/MrUser";
+import MsWebWorker from "../components/characters/MsWebWorker";
+import WebWorkerRelationship from "../components/WebWorkerRelationship";
 export default {
   name: "WebWorkerSearch",
-  components: { Relationship, MsWebWorker, MrUser }
+  components: { WebWorkerRelationship, MsWebWorker, MrUser }
 };
 </script>

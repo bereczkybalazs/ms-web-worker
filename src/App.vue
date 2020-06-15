@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import WebWorkerSearch from "./components/WebWorkerSearch";
+import WebWorkerSearch from "./pages/WebWorkerPage";
 export default {
   name: "App",
   components: {
