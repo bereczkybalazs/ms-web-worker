@@ -8,6 +8,7 @@
 
 <script>
 import Relationship from "./Relationship";
+import generateConflict from "./generateConflict";
 export default {
   name: "FrontendFilteringRelationship",
   components: { Relationship },
@@ -21,12 +22,7 @@ export default {
     initiateConflict() {
       this.loading = true;
 
-      const seconds = 3;
-      const start = new Date().getTime();
-      let end = start;
-      while (end - start < seconds * 1000) {
-        end = new Date().getTime();
-      }
+      generateConflict();
 
       this.resolvedConflicts++;
       this.loading = false;

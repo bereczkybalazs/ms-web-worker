@@ -8,6 +8,7 @@
 
 <script>
 import Relationship from "./Relationship";
+import generateConflict from "./generateConflict";
 export default {
   name: "WebWorkerRelationship",
   components: { Relationship },
@@ -22,19 +23,12 @@ export default {
       this.loading = true;
       this.$worker
         .run(
-          () => {
-            const seconds = 3;
-            const start = new Date().getTime();
-            let end = start;
-            while (end - start < seconds * 1000) {
-              end = new Date().getTime();
-            }
-            return "conflict resolved";
-          },
-          [] // array of params here: methods can't be passed
+          // method which will run, external methods can't be used inside this method// eg: () => { external method }
+          generateConflict,
+          // array of params here: methods can't be passed
+          []
         )
-        .then(result => {
-          console.log(result);
+        .then(() => {
           this.resolvedConflicts++;
           this.loading = false;
         });
