@@ -3,7 +3,7 @@
     <h1 class="text-3xl mb-8">
       Relationships of Mr. User
     </h1>
-    <MrUser class="w-1/3" />
+    <MrUser />
   </div>
 </template>
 

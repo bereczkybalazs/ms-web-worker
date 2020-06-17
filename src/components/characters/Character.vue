@@ -1,5 +1,5 @@
 <template>
-  <figure>
+  <figure class="w-1/4 lg:w-1/6">
     <img :src="url" :alt="name" />
     <figcaption class="text-center text-lg mt-4">
       {{ name }}

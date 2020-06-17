@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="text-center text-3xl my-8">
+    <h1 class="text-center text-lg md:text-3xl my-8">
       Mr User And Mrs. Frontend Filtering's relationship
     </h1>
     <div class="flex justify-center container mx-auto">
-      <MrUser class="w-1/4" />
-      <FrontendFilteringRelationship class="w-2/4" />
-      <MrsFrontendFiltering class="w-1/4" />
+      <MrUser />
+      <FrontendFilteringRelationship />
+      <MrsFrontendFiltering />
     </div>
   </div>
 </template>
